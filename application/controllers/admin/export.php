@@ -842,6 +842,13 @@ class export extends Survey_Common_Action {
                 echo "\n";
 
             }  // end foreach
+
+            //Add R script to associate labels with variables for RKWard
+            if ( isset($_POST['rkward']))
+            {
+                echo 'for (i in 1:length (attributes(data)$variable.labels)) { rk.set.label (data[[i]], attributes(data)$variable.labels[i]) }' . "\n\n";
+            }
+
             echo $errors;
             exit;
         }

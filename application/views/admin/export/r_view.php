@@ -9,7 +9,7 @@
             <option value='incomplete' <?php echo$selectinc;?>><?php $clang->eT("Incomplete responses only");?></option>
         </select>
     </li>
-    <li><label for='dlstructure'><?php $clang->eT("Step 1:");?></label><input type='submit' name='dlstructure' id='dlstructure' value='<?php $clang->eT("Export R syntax file");?>'/></li>
+    <li><label for='dlstructure'><?php $clang->eT("Step 1:");?></label><input type='submit' name='dlstructure' id='dlstructure' value='<?php $clang->eT("Export R syntax file");?>'/><input type="checkbox" name='rkward' id='rkward' value='rkward' style='vertical-align: middle; margin-right: 2px;' /><label for='rkward' style='font-size: 8pt;'>pour RKWard</label></li>
     <li><label for='dldata'/><?php $clang->eT("Step 2:");?></label><input type='submit' name='dldata' id='dldata' value='<?php $clang->eT("Export .csv data file");?>'/></li></ul>
 </form>
 
